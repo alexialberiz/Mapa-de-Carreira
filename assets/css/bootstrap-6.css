@@ -11710,11 +11710,11 @@ body {
 }
 
 a {
-  color: #80425F;
+  color: #58151c;
 }
 
 a:hover {
-  color: #4e283a;
+  color: #58151c;
 }
 
 a.no-text-decoration {
@@ -11722,11 +11722,11 @@ a.no-text-decoration {
 }
 
 .theme-bg-primary {
-  background-color: #80425F;
+  background-color: #58151c;
 }
 
 .theme-bg-primary-darken {
-  background-color: #3d1f2d;
+  background-color: #58151c;
 }
 
 a.theme-btn-on-bg, .theme-btn-on-bg {
@@ -11746,7 +11746,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .theme-progress-bar-dark {
-  background-color: #80425F;
+  background-color: #58151c;
 }
 
 .resume-wrapper {
@@ -11759,7 +11759,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-header {
-  background: #80425F;
+  background: #58151c;
   color: rgba(255, 255, 255, 0.9);
   height: 220px;
 }
@@ -11786,24 +11786,69 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   color: white;
 }
 
+.resume-header .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .resume-social {
-  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.resume-social a:hover {
+  color: #ddd;
 }
 
 .resume-social .fa-container {
   font-size: 1rem;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 0.125rem;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
   background: white;
-  color: #80425F;
+  color: #58151c;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.resume-social li {
+  margin-bottom: 8px;
+}
+
+/* Remove linha dos links e mantém clicável */
+.resume-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Efeito no hover - opcional */
+.resume-social li:hover {
+  color: #58151c;
+  cursor: pointer;
+}
+
+.resume-social li:hover .fa-container {
+  background: #58151c;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .resume-social {
+    align-items: center;
+    padding-right: 0;
+  }
 }
 
 .resume-section-title {
   font-size: 1.25rem;
   position: relative;
-  color: #80425F;
+  color: #58151c;
 }
 
 .resume-section-title:after {
@@ -11817,7 +11862,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-section-content {
-  color: #58677c;
+  color:#000;
 }
 
 .resume-timeline {
@@ -11843,7 +11888,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   top: 3px;
   width: 15px;
   height: 15px;
-  border: 4px solid #a25378;
+  border: 4px solid #58151c;
   background: white;
   border-radius: 50%;
 }
@@ -11853,7 +11898,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-company-name {
-  color: #58677c;
+  color: #000;
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -11865,7 +11910,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-position-title {
   font-size: 1.125rem;
-  color: #434E5E;
+  color: #000;
 }
 
 .resume-timeline-item-desc-heading {
@@ -11874,12 +11919,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-skills-cat {
   font-size: 1rem;
-  color: #434E5E;
+  color: #000;
 }
 
 .resume-skill-name {
   font-size: 0.8125rem;
-  color: #434E5E;
+  color:#000;
 }
 
 .badge-light {
@@ -11888,7 +11933,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-degree {
-  color: #434E5E;
+  color: #000;
 }
 
 .resume-degree-org {
@@ -11908,7 +11953,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-award-name {
   font-weight: bold;
-  color: #434E5E;
+  color: #000;
 }
 
 .resume-award-desc {
@@ -11916,7 +11961,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-lang-name {
-  color: #434E5E;
+  color: #000;
 }
 
 .footer .fa-heart {
@@ -11936,7 +11981,20 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   }
 }
 .btn {
-  border: 1px solid rgba(var(--bs-black-rgb), var(--bs-bg-opacity));
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
-  margin: 2em auto;
+   display: inline-block;
+  padding: 12px 28px;
+  background-color: #6C63FF; /* cor roxa, mas me diz a sua! */
+  color: white;
+  font-weight: 600;
+  border-radius: 20px; /* mais arredondado */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(108, 99, 255, 0.4);
+  margin-top: 20px; /* espaço acima do botão */
+}
+
+.btn:hover {
+  background-color: #4e47c9; /* tom mais escuro no hover */
+  box-shadow: 0 5px 10px rgba(78, 71, 201, 0.6);
+  cursor: pointer;
 }
